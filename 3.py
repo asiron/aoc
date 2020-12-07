@@ -34,5 +34,5 @@ def part2():
     return functools.reduce(lambda acc,slope: run_slope(*slope)*acc, slopes, 1)
 
 if __name__ == '__main__':
-    print(f'Part1: Nuber of encountered trees: {part1()}')
-    print(f'Part2: Total product of encountered trees on each slope run: {part2()}')
+    print(f'Part1: Number of encountered trees is {part1()}')
+    print(f'Part2: Total product of encountered trees on each slope run is {part2()}')

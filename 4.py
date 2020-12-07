@@ -65,5 +65,5 @@ def part2_iter_fun():
 if __name__ == '__main__':
     print(f'Part1: Number of valid passports: {part1()}')
     print(f'Part2: Number of valid passports: {part2()}')
-    print(f'Part1: Number of valid passports: {part1_iter_fun()}')
-    print(f'Part2: Number of valid passports: {part2_iter_fun()}')
+    print(f'Part1A: Number of valid passports: {part1_iter_fun()}')
+    print(f'Part2A: Number of valid passports: {part2_iter_fun()}')

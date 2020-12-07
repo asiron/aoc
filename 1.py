@@ -22,5 +22,5 @@ def three_sum():
                     seen.add(cur_number)
 
 if __name__ == '__main__':
-    print(f'Part1: {two_sum()}')
-    print(f'Part2: naive O(N^2) {three_sum()}')
+    print(f'Part1: Product of the 2 entries is {two_sum()}')
+    print(f'Part2: Product of the 3 entries is {three_sum()}')

@@ -29,5 +29,5 @@ def part2():
     return count_valid_password(part2_is_valid_passwd)
 
 if __name__ == '__main__':
-    print(f'Part1: {part1()}')
-    print(f'Part2: {part2()}')
+    print(f'Part1: Number of vald passports {part1()}')
+    print(f'Part2: Number of vald passports {part2()}')

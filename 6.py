@@ -56,5 +56,5 @@ def part2_iter_fun():
 if __name__ == '__main__':
     print(f'Part1: Sum of the counts is {part1()}')
     print(f'Part2: Sum of the counts is {part2()}')
-    print(f'Part1: Sum of the counts is {part1_iter_fun()}')
-    print(f'Part2: Sum of the counts is {part2_iter_fun()}')
+    print(f'Part1A: Sum of the counts is {part1_iter_fun()}')
+    print(f'Part2A: Sum of the counts is {part2_iter_fun()}')
