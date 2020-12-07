@@ -1,5 +1,3 @@
-
-
 def get_seat_positions():
     with open('5.input', 'rt') as f:
         for line in f:

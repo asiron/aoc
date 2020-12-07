@@ -9,7 +9,7 @@ def run_slope(right=1, down=1):
         current_hori_pos = 0
 
         for _ in range(down):
-            ''' skip first N=down lines ''' 
+            ''' skip first N=down lines '''
             next(f)
         for line in iterate_by_jumping_n_elements(f, down):
             current_hori_pos = (current_hori_pos + right) % (len(line)-1)

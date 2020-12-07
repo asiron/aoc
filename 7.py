@@ -20,8 +20,6 @@ def part1():
         for outer_bag, _, inner_bag in get_bag_rules():
             adjacency_list[inner_bag].append(outer_bag)
 
-
-
         def bfs(root):
             count, visited, queue = 0, set(), deque([root])
             while len(queue) > 0:

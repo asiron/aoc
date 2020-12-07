@@ -1,4 +1,5 @@
 import itertools, functools, string
+
 def part1():
     with open('6.input', 'rt') as f:
 
@@ -7,7 +8,6 @@ def part1():
         for line in f:
 
             if not line.strip():
-                # new group
                 count += len(questions)
                 questions = set()
                 continue
