@@ -1,4 +1,4 @@
-from itertools import product, count
+from itertools import product, count, takewhile
 import numpy as np
 
 def adjecent_neighbours(grid, cell, n, m):
@@ -9,13 +9,13 @@ def adjecent_neighbours(grid, cell, n, m):
 def first_chair_in_sight_neighbours(grid, cell, n, m):
     dirs = (dir for dir in product([-1, 0, 1], [-1, 0, 1]) if dir != (0,0))
     for dir in dirs:
-        for dx, dy in zip(*[count(w+step, step) for w, step in zip(cell, dir)]):
-            if 0 <= dx < n and 0 <= dy < m:
-                if grid[dx,dy] in ('#', 'L'):
-                    yield (dx, dy)
-                    break
-            else:
+        look_in_dir = zip(*[count(w+step, step) for w, step in zip(cell, dir)])
+        look_in_dir = takewhile(lambda dxdy: 0<=dxdy[0]<n and 0<=dxdy[1]<m, look_in_dir)
+        for dx,dy in look_in_dir:
+            if grid[dx,dy] in ('#', 'L'):
+                yield (dx, dy)
                 break
+
 
 def game_of_seats(seat_selection, at_least_N_occupied_seat):
 
